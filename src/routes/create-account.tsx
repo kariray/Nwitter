@@ -12,6 +12,7 @@ import {
   Error,
   Form,
 } from "../components/auth-components";
+import GithubButton from "../components/github-btn";
 
 export default function CreateAccount() {
   const navigate = useNavigate();
@@ -100,6 +101,7 @@ export default function CreateAccount() {
         Already have an account?
         <Link to="/login">login &rarr;</Link>
       </Switcher>
+      <GithubButton />
     </Wrapper>
   );
 }
